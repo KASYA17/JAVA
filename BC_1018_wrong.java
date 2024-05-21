@@ -7,9 +7,8 @@ public class Main {
         Scanner sc = new Scanner(System.in);
 
         num = sc.nextInt();
-        
-        int notas100 = 0, notas50 = 0, notas20 = 0, 
-        notas10 = 0, notas5 = 0, notas2 = 0, notas1 = 0;
+        int temp = num;
+        int notas100,notas50,notas20,notas10,notas5, notas2, notas1;
 
         notas100 = num / 100;
         num = num % 100;
@@ -25,7 +24,7 @@ public class Main {
         num = num % 2;
         notas1 = num;
 
-        System.out.println(num);
+        System.out.println(temp);
         System.out.println(notas100 + " nota(s) de R$ 100,00");
         System.out.println(notas50 + " nota(s) de R$ 50,00");
         System.out.println(notas20 + " nota(s) de R$ 20,00");
